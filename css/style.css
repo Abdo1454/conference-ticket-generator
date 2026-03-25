@@ -1,0 +1,66 @@
+body{
+    min-height: 100vh;
+  background-color: #0d0d2b;
+    background-image: url(../img/logo-full.svg),
+    url(../img/pattern-squiggly-line-bottom-desktop.svg)
+    ,url(../img/pattern-squiggly-line-top.svg),
+    url(../img/pattern-lines.svg),
+    url(../img/pattern-circle.svg),
+    url(../img/background-desktop.png);
+    background-position:center top  50px,
+   left  bottom  50px,
+   right  top 50px,
+   center,
+   center,
+    center;
+    background-repeat: no-repeat,no-repeat, no-repeat,no-repeat,repeat,no-repeat ;
+     background-size: 
+     10%  ,
+    30%,
+    30%,
+    cover,
+    auto,
+    cover;
+}
+form{
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+form legend{
+    font-size: 34px;
+   font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.image-card {
+    border: ridge;
+    height: 70px;
+    /* padding: 40% 40%; */
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    height: 35px;
+    width:  300px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+/* لما المستخدم يكتب / يضغط على الحقل */
+form input:focus {
+  background-color: #fff; /* الخلفية تبقى أبيض */
+  color: #000; /* النص يبقى أسود */
+  outline: none; /* إزالة الـ outline الافتراضي */
+  border-color: #007bff; /* Optional: إضافة لون الحدود */
+}
+form input[type="submit"]{
+    background-color: hsl(6.58deg 89.02% 67.84%);
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Betania+Patmos&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ticket</title>
+  </head>
+  <body>
+    <header class="header-content">
+      <form onsubmit="return getData()" action="ticket.html">
+        <legend>Your Journey to Coding Conf <br>2025 Starts Here!</legend>
+        <h4>Secure your spot at next year's biggest coding conference.</h4>
+        <div>
+            <label for="fileInput" >Upload Avatar
+                <p class="image-card"><img src="img/icon-upload.svg" /> Drag and drop or click to upload</p>
+            </label>
+            <br>
+            <input type="file" name="image"  accept="image/*" hidden id="fileInput"/>
+            <small>Upload your photo (JPG or PNG, max size: 500KB).</small>
+        </div>
+        <div>
+          <label>full name</label>
+          <br>
+          <input type="text" name="name" id="name1" />
+        </div>
+        <div>
+          <label>Email Address</label>
+          <br>
+          <input type="email" name="email" id="email1" />
+        </div>
+        <div>
+          <label>Github Username </label>
+          <br>
+          <input name="git" type="text" id="git1" />
+        </div>
+           <br>
+        <input type="submit" value="Generate My Ticket " />
+      </form>
+    </header>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+body {
+  min-height: 100vh;
+  background:
+    url("../img/logo-full.svg"),
+    /* لوجو 1 */ url("../img/logo-full.svg"),
+    /* لوجو 2 */ url("../img/pattern-ticket.svg"),
+    url("../img/pattern-squiggly-line-bottom-desktop.svg"),
+    url("../img/pattern-squiggly-line-top.svg"),
+    url("../img/pattern-lines.svg"),
+    url("../img/pattern-circle.svg"),
+    url("../img/background-desktop.png");
+
+  background-repeat:
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat,
+    no-repeat;
+  background-position:
+    center top 40px,
+    /* اللوجو الأول فوق */ center 48%,
+    /* اللوجو الثاني تحت */ center 60%,
+    /* التذكرة */ left bottom 50px,
+    right top 50px,
+    center,
+    center,
+    center;
+
+  background-size:
+    130px,
+    /* logo 1 */ 150px,
+    /* logo 2 */ 450px,
+    /* ticket */ 30%,
+    30%,
+    cover,
+    auto,
+    cover;
+}
+.reg {
+  font-size: 20px;
+  margin-top: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: initial; */
+}
+.ticket {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  margin-left: 43%;
+  margin-top: 110px;
+}
+#image {
+  width: 80px;
+  border-radius: 50%;
+}
+.imge {
+  color: #fff;
+  /* display: inline-block; */
+  text-align: center;
+  /* margin-left: 43%; */
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: ; */
+  gap: 15px;
+  margin-right: 110px;
+}
+/* .imge img{
+    margin-left: 20%;
+}
+.imge div{
+    margin-right: 15%;
+} */
