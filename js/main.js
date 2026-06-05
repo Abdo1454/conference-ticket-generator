@@ -46,6 +46,23 @@ function getData() {
 
 window.onload = function () {
 
+  const nameElement = document.getElementById("name");
+  const emailElement = document.getElementById("email");
+  const ticketNameElement = document.getElementById("name-ticket");
+  const imageElement = document.getElementById("image");
+  const githubElement = document.getElementById("github");
+
+  // إذا كنا في index.html اخرج مباشرة
+  if (
+    !nameElement ||
+    !emailElement ||
+    !ticketNameElement ||
+    !imageElement ||
+    !githubElement
+  ) {
+    return;
+  }
+
   let name = localStorage.getItem("name");
   let email = localStorage.getItem("email");
   let image = localStorage.getItem("image");
@@ -53,13 +70,14 @@ window.onload = function () {
 
   if (!name) {
     window.location.href = "index.html";
+    return;
   }
 
-  document.getElementById("name").innerText = name;
-  document.getElementById("email").innerText = email;
-  document.getElementById("name-ticket").innerText = name;
-  document.getElementById("image").src = image;
+  nameElement.innerText = name;
+  emailElement.innerText = email;
+  ticketNameElement.innerText = name;
+  imageElement.src = image;
 
-  document.getElementById("github").innerHTML =
+  githubElement.innerHTML =
     `<i class="fa-brands fa-github"></i> ${github}`;
 };
