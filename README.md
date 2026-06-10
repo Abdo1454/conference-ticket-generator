@@ -4,7 +4,7 @@ A responsive frontend project built using HTML, CSS, and JavaScript.
 
 ##  Live Demo
 
-https://abdo1454.github.io/conference-ticket-generator/
+https://tickettt.netlify.app/
 
 ##  Technologies
 
